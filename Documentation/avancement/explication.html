@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr_FR">
+<head>
+	<title>Jeux de Nim - Explication du Code</title>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="explication.css">
+	<link rel="icon" href="icon.png" sizes="64x64"> 
+</head>
+<div style="display: inline;">
+	<h1 style="font-size:300%">
+    Explication du code</h1>
+</div>
+<p class="blocktext">
+    La variable settings['updateValue'] peut prendre trois valeur : 0, 1 et 2. La valeur 1 veut dire "continuer la boucle", la valeur 0 veut dire "retour au menu principal" et la valeur 2, 
+    "retour au menu paramètres".<br><br>
+    FLTK s'est rennomé en Fltica ! Cette version personnalisée contient la possibilité de créer des boutons à l'aide d'une classe, d'afficher des images animées et de jouer du son.<br><br>
+    Les joueurs sont gérés par des classes simples contenant quelques variables dont "nextPlay" qui défini quel est le joueur suivant.<br><br>
+    L'ordinateur "facile" sélectionne d'abord une ligne au hasard parmis celles disponible puis décide aléatoirement de combien de coups jouer et, si il trouve toutes les allumettes, joue ce coup
+     (mais juste ce qu'il peut sinon).<br><br>
+    La détection d'une allumette se fait par sa position. En effet, à chaque clic gauche, le programme vérifie l'ordonnée puis l'abscisse de la souris et regarde s'il y a une allumette à cette emplacement.<br><br>
+    La dossier "old" contient d'anciennes versions du projet, permettant donc de voir l'avancement.
+</p>
+
+
+<footer id="footer">
+    <div class="container max-width">
+        <p class="colophon">
+        <a class="acc" href="../index.html">Retour à l'accueil</a> <br>
+        Site par Rayanne. Application par Rayanne, Alex et Nathan.<br>© 2021-2022
+        </p>
+    </div>
+</footer>
+    
+</body>
+</html>

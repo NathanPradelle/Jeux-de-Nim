@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr_FR">
+<head>
+	<title>Jeux de Nim - Problèmes et Ameliorations</title>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="amelioration.css">
+	<link rel="icon" href="icon.png" sizes="64x64"> 
+</head>
+<div style="display: inline;">
+	<h1 style="font-size:300%">
+    Problèmes et Ameliorations possibles</h1>
+</div><br><br>
+
+<h2>Plusieurs améliorations seraient envisageable :<br> <br></h2>
+<p class="blocktext">
+    Un réécriture totale du code pourrait être une bonne idée. En effet, le code à été sévèrement modifié et des idées sont venus s'ajouter au fur-et-à-mesure, rendant
+    certaines parties du code erronées ou trop complexe.<br><br>
+    L'ajout d'un mode "ordinateur parfait" est aussi possible. Ce mode permetterait à l'utilisateur de ne jamais gagner, qu'importe le nombre de lignes ou d'allumettes.<br><br>
+    L'utilisaiton de fichiers au format json ont aussi été réfléchit. Ces fichiers pourraient stocker à la fois les joueurs (noms, couleurs, nombre de victoires) et les paramètres<br><br>
+    Un mode en ligne a aussi été pensé mais annulé par manque de temps. Ce mode fonctionnerait avec un client et un serveur tout en utilisant des sockets simples.<br><br>
+    L'ajout d'autres thèmes et langues est aussi une idée intéressante.<br><br>
+</p><br><br><br>
+<h2>Mais plusieurs problèmes se sont posées à nous :<br> <br></h2>
+<p class="blocktext">
+    L'hétérogénéité du groupe a causé de grosses pertes de motivation et a fait perdre un temps considérable.<br><br>
+    Le code reste trop complexe. Par exemple, chaque texte est appelé par <b>text[settings['lang']]['texte_voulu']</b>. Une fonction retourant le texte voulu en fonction de la
+    langue aurait pu être plus intéressante à intégrer et aurait permit de simplifier, au moins visuellement, le progamme.<br><br>
+    FLTK ne pouvait pas afficher d'images gif transparentes. Une implémentation personnalisée utilisant un itérable d'images a donc dû être mit en place. La bibliothèque Pillow, 
+    <abbr title="Les ordinateur de l'université conntiennent une ancienne version de Pillow qui n'est pas compatible avec FLTK">à jour</abbr> est donc requise.<br><br>
+    Problème majeur : on est le 07/01/2022, et il est 21h25 quand j'écris cette ligne...
+    
+</p>
+
+
+<footer id="footer">
+    <div class="container max-width">
+        <p class="colophon">
+        <a class="acc" href="../index.html">Retour à l'accueil</a> <br>
+        Site par Rayanne. Application par Rayanne, Alex et Nathan.<br>© 2021-2022
+        </p
+    </div>
+</footer>
+    
+</body>
+</html>
